@@ -1,0 +1,71 @@
+/*
+    lament configurator
+    author: j. ky marsh
+    github: https://github.com/jkymarsh
+    version: 2.0
+*/
+
+/*
+    NOTE: there are no mobile-specific styles! This is because lament configurator is
+    mobile-first - that is, your default styling is your mobile styling, and you should
+    only be overriding it for larger devices!
+*/
+
+/*
+    TABLET STYLES
+*/
+/* 800px @ 16px base font size */
+@media (min-width: 50em) {
+    .tablet-float-left {  float: left; }
+    .tablet-float-right { float: right; }
+    .tablet-float-none {  float: none; }
+
+    .tablet-clear-both {  clear: both; }
+    .tablet-clear-left {  clear: left; }
+    .tablet-clear-right { clear: right; }
+    .tablet-clear-none {  clear: none; }
+
+    .tablet-text-align-left {   text-align: left; }
+    .tablet-text-align-right {  text-align: right; }
+    .tablet-text-align-center { text-align: center; }
+
+    .tablet-display-block {        display: block; }
+    .tablet-display-inline {       display: inline; }
+    .tablet-display-inline-block { display: inline-block; }
+    .tablet-display-none {         display: none; }
+
+    .tablet-visibility-visible { visibility: visible; }
+    .tablet-visibility-hidden {  visibility: hidden; }
+}
+
+/*
+    DESKTOP STYLES
+*/
+/* 1200px @ 16px base font size */
+@media (min-width: 75em) {
+    /*
+        NOTE: tablet styles will cascade up to desktop unless you explicitly set
+        desktop styles!
+    */
+
+    .desktop-float-left {  float: left; }
+    .desktop-float-right { float: right; }
+    .desktop-float-none {  float: none; }
+
+    .desktop-clear-both {  clear: both; }
+    .desktop-clear-left {  clear: left; }
+    .desktop-clear-right { clear: right; }
+    .desktop-clear-none {  clear: none; }
+
+    .desktop-text-align-left {   text-align: left; }
+    .desktop-text-align-right {  text-align: right; }
+    .desktop-text-align-center { text-align: center; }
+
+    .desktop-display-block {        display: block; }
+    .desktop-display-inline {       display: inline; }
+    .desktop-display-inline-block { display: inline-block; }
+    .desktop-display-none {         display: none; }
+
+    .desktop-visibility-visible { visibility: visible; }
+    .desktop-visibility-hidden {  visibility: hidden; }
+}
