@@ -1,0 +1,73 @@
+/*
+    lament configurator
+    author: j. ky marsh
+    github: https://github.com/jkymarsh
+    version: 2.0
+*/
+
+/*
+    NOTE: there are no mobile-specific styles! This is because lament configurator is
+    mobile-first - that is, your default styling is your mobile styling, and you should
+    only be overriding it for larger devices!
+*/
+
+/*
+    TABLET STYLES
+*/
+/* 800px @ 16px base font size */
+@media (min-width: 50em) {
+    .tablet-float-left {  float: left; }
+    .tablet-float-right { float: right; }
+    .tablet-float-none {  float: none; }
+
+    .tablet-clear-both {  clear: both; }
+    .tablet-clear-left {  clear: left; }
+    .tablet-clear-right { clear: right; }
+    .tablet-clear-none {  clear: none; }
+
+    .tablet-text-align-left {   text-align: left; }
+    .tablet-text-align-right {  text-align: right; }
+    .tablet-text-align-center { text-align: center; }
+
+    .tablet-display-block {        display: block; }
+    .tablet-display-inline {       display: inline; }
+    .tablet-display-inline-block { display: inline-block; }
+    .tablet-display-none {         display: none; }
+
+    .tablet-visibility-visible { visibility: visible; }
+    .tablet-visibility-hidden {  visibility: hidden; }
+}
+
+/*
+    DESKTOP STYLES
+*/
+/* 1200px */
+@media (min-width: 75em) {
+    /* classes for mobile ui cascade from tablet styles */
+
+    /* classes for tablet ui */
+
+    .float-left-on-tablet {  float: none; }
+    .float-right-on-tablet { float: none; }
+    /* doesn't make sense to reset .float-none-on-tablet: none, as none is default behavior */
+
+    .clear-both-on-tablet { clear: none; }
+
+    .text-align-center-on-tablet { text-align: inherit; }
+
+    .show-on-tablet { display: none; }
+    .hide-on-tablet { display: block; }
+
+    /* classes for desktop ui */
+
+    .float-left-on-desktop {  float: left; }
+    .float-right-on-desktop { float: right; }
+    .float-none-on-desktop {  float: none; }
+
+    .clear-both-on-desktop { clear: both; }
+
+    .text-align-center-on-desktop { text-align: center; }
+
+    .show-on-desktop { display: block; }
+    .hide-on-desktop { display: none; }
+}
