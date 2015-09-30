@@ -41,33 +41,31 @@
 /*
     DESKTOP STYLES
 */
-/* 1200px */
+/* 1200px @ 16px base font size */
 @media (min-width: 75em) {
-    /* classes for mobile ui cascade from tablet styles */
+    /*
+        NOTE: tablet styles will cascade up to desktop unless you explicitly set
+        desktop styles!
+    */
 
-    /* classes for tablet ui */
+    .desktop-float-left {  float: left; }
+    .desktop-float-right { float: right; }
+    .desktop-float-none {  float: none; }
 
-    .float-left-on-tablet {  float: none; }
-    .float-right-on-tablet { float: none; }
-    /* doesn't make sense to reset .float-none-on-tablet: none, as none is default behavior */
+    .desktop-clear-both {  clear: both; }
+    .desktop-clear-left {  clear: left; }
+    .desktop-clear-right { clear: right; }
+    .desktop-clear-none {  clear: none; }
 
-    .clear-both-on-tablet { clear: none; }
+    .desktop-text-align-left {   text-align: left; }
+    .desktop-text-align-right {  text-align: right; }
+    .desktop-text-align-center { text-align: center; }
 
-    .text-align-center-on-tablet { text-align: inherit; }
+    .desktop-display-block {        display: block; }
+    .desktop-display-inline {       display: inline; }
+    .desktop-display-inline-block { display: inline-block; }
+    .desktop-display-none {         display: none; }
 
-    .show-on-tablet { display: none; }
-    .hide-on-tablet { display: block; }
-
-    /* classes for desktop ui */
-
-    .float-left-on-desktop {  float: left; }
-    .float-right-on-desktop { float: right; }
-    .float-none-on-desktop {  float: none; }
-
-    .clear-both-on-desktop { clear: both; }
-
-    .text-align-center-on-desktop { text-align: center; }
-
-    .show-on-desktop { display: block; }
-    .hide-on-desktop { display: none; }
+    .desktop-visibility-visible { visibility: visible; }
+    .desktop-visibility-hidden {  visibility: hidden; }
 }
